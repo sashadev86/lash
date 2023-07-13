@@ -1,0 +1,34 @@
+.hero {
+  position: relative;
+
+  &__container {
+    position: relative;
+  }
+
+  &__picture {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    padding-top: 15%;
+    padding-bottom: 50%;
+    max-width: 705px;
+    width: 100%;
+    font-family: 'Palace of Sports', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: var(--color-black-russian);
+    text-transform: uppercase;
+
+    &-span {
+      color: var(--color-medium-red-violet);
+    }
+  }
+}

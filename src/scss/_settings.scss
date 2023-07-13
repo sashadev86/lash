@@ -29,6 +29,22 @@ img {
 
 a {
   text-decoration: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+figure,
+input {
+  margin: 0;
+  padding: 0;
 }
 
 .site-container {

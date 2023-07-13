@@ -1,0 +1,61 @@
+.about {
+  padding-top: 89px;
+  padding-bottom: 70px;
+
+  &__title {
+    margin-bottom: 70px;
+    font-family: 'Palace of Sports', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--color-black-russian);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    column-gap: 30px;
+
+    &-image {
+      max-width: 416px;
+      width: 100%;
+
+      &-picture {
+        display: flex;
+      }
+
+      &-img {
+        border-radius: 15px;
+      }
+    }
+
+    &-description {
+      padding: 40px 20px;
+      max-width: 735px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: var(--color-kobi);
+      border-radius: 15px;
+
+      &-text {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__descr {
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: lowercase;
+    border: 3px solid var(--color-medium-red-violet);
+    border-radius: 15px;
+  }
+}

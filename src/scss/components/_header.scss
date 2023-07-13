@@ -1,0 +1,36 @@
+.header {
+  background-color: var(--color-kobi);
+
+  &__container {
+    padding-top: 29px;
+    padding-bottom: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 103px;
+    height: 37px;
+  }
+
+  & .nav {
+    width: 60%;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+
+      &-link {
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: lowercase;
+        color: var(--color-black-russian);
+      }
+    }
+  }
+
+}
