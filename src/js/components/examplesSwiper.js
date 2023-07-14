@@ -7,7 +7,7 @@ const swiper = new Swiper('.examples__swiper', {
   modules: [Navigation],
   slidesPerView: 1,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".examples__button-next",
+    prevEl: ".examples__button-prev",
   },
 });
