@@ -1,0 +1,91 @@
+.address {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin-bottom: 70px;
+    font-family: 'Palace of Sports';
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--color-black-russian);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 25px;
+
+    &-map {
+      max-width: 735px;
+      width: 100%;
+      height: 500px;
+      border-radius: 15px;
+
+      & .ymaps-2-1-79-inner-panes,
+      .ymaps-2-1-79-map {
+        border-radius: 15px;
+      }
+
+
+      .ymaps-2-1-79-copyright__content,
+      .ymaps-2-1-79-controls__control_toolbar,
+      .ymaps-2-1-79-gototech,
+      .ymaps-2-1-79-scaleline,
+      .ymaps-2-1-79-_hidden-text {
+        display: none;
+      }
+    }
+
+    &-contacts {
+      max-width: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-description {
+        padding: 12px;
+        font-size: 30px;
+        font-weight: 300;
+        color: var(--color-black-russian);
+        text-align: center;
+        text-transform: lowercase;
+        background-color: var(--color-kobi);
+        border-radius: 15px;
+      }
+
+      &-address {
+        padding: 12px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--color-black-russian);
+        text-align: center;
+        background-color: var(--color-white);
+        border: 2px solid var(--color-kobi);
+        border-radius: 15px;
+      }
+
+      &-phone,
+      &-email {
+        padding: 12px;
+        display: block;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--color-black-russian);
+        text-align: center;
+        background-color: var(--color-white);
+        border: 2px solid var(--color-kobi);
+        border-radius: 15px;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 25px;
+  }
+}

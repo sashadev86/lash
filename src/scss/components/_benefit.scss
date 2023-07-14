@@ -1,0 +1,52 @@
+.benefit {
+  padding-top: 60px;
+  margin-bottom: 60px;
+
+  &__title {
+    margin-bottom: 70px;
+    font-family: 'Palace of Sports';
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--color-black-russian);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 300px;
+
+    &-image {
+      margin-bottom: 15px;
+    }
+
+    &-title {
+      margin-bottom: 25px;
+      padding: 11px 20px;
+      width: 100%;
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--color-black-russian);
+      text-align: center;
+      text-transform: uppercase;
+      border: 2px solid var(--color-medium-red-violet);
+      border-radius: 30px;
+    }
+
+    &-description {
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--color-black-russian);
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}

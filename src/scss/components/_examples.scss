@@ -1,0 +1,38 @@
+.examples {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin-bottom: 70px;
+    font-family: 'Palace of Sports';
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--color-black-russian);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .examples__swiper {
+    width: 100%;
+
+    &-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-picture {
+        display: flex;
+        border: 3px solid var(--color-medium-red-violet);
+        border-radius: 32px;
+
+        &-image {
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+
+}

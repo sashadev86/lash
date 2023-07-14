@@ -1,1 +1,3 @@
-console.log('components');
+import './components/examplesSwiper';
+import './components/map';
+
