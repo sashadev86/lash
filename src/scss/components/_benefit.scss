@@ -10,12 +10,26 @@
     color: var(--color-black-russian);
     text-align: center;
     text-transform: uppercase;
+
+    @include mobile {
+      & {
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+    }
   }
 
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 45px;
+
+    @include tablet {
+      & {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+      }
+    }
   }
 
   &__card {
@@ -47,6 +61,17 @@
       color: var(--color-black-russian);
       text-align: center;
       text-transform: uppercase;
+    }
+
+    @include mobile {
+      &-title {
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      &-description {
+        font-size: 18px;
+      }
     }
   }
 }

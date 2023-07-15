@@ -10,6 +10,13 @@
     color: var(--color-black-russian);
     text-transform: uppercase;
     text-align: center;
+
+    @include mobile {
+      & {
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+    }
   }
 
   &__wrapper {
@@ -58,6 +65,32 @@
         font-weight: 300;
         text-transform: uppercase;
       }
+
+      @include mobile {
+        & {
+          padding: 10px;
+          gap: 20px;
+
+          &-text {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    @include high-desktop {
+      & {
+        flex-direction: column;
+        gap: 20px;
+
+        &-image {
+          max-width: none;
+        }
+
+        &-description {
+          max-width: none;
+        }
+      }
     }
   }
 
@@ -69,5 +102,10 @@
     text-transform: lowercase;
     border: 3px solid var(--color-medium-red-violet);
     border-radius: 15px;
+
+    @include mobile {
+      padding: 10px;
+      font-size: 18px;
+    }
   }
 }

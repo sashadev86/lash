@@ -14,9 +14,15 @@
     color: var(--color-black-russian);
     text-align: center;
     text-transform: uppercase;
+
+    @include mobile {
+      & {
+        font-size: 40px;
+      }
+    }
   }
 
-  .examples__swiper {
+  &__swiper {
     width: 100%;
 
     &-slide {
@@ -49,6 +55,16 @@
         }
       }
     }
+
+    @include mobile {
+      &-slide {
+        &-picture {
+          &-image {
+            height: 240px;
+          }
+        }
+      }
+    }
   }
 
   &__button {
@@ -72,6 +88,16 @@
       @include big-desktop {
         & {
           top: 5%;
+        }
+      }
+
+      @include mobile {
+        & {
+          top: 12%;
+        }
+
+        &-image {
+          width: 60px;
         }
       }
     }

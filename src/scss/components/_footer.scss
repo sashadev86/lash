@@ -11,6 +11,12 @@
     color: var(--color-black-russian);
     text-transform: uppercase;
     text-align: center;
+
+    @include mobile {
+      & {
+        font-size: 12px;
+      }
+    }
   }
 
   &__amici {

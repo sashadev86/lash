@@ -1,16 +1,21 @@
-<nav class="nav">
+<nav class="nav" data-menu>
+  <button class="nav__close btn-reset" data-menu-close>
+    <svg class="nav__close-image">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </button>
   <ul class="nav__list list-reset">
     <li class="nav__item">
-      <a href="#about" class="nav__item-link" data-scroll>О нас</a>
+      <a href="#about" class="nav__item-link" data-scroll data-menu-item>О нас</a>
     </li>
     <li class="nav__item">
-      <a href="#price" class="nav__item-link" data-scroll>Цены</a>
+      <a href="#price" class="nav__item-link" data-scroll data-menu-item>Цены</a>
     </li>
     <li class="nav__item">
-      <a href="#examples" class="nav__item-link" data-scroll>Примеры работ</a>
+      <a href="#examples" class="nav__item-link" data-scroll data-menu-item>Примеры работ</a>
     </li>
     <li class="nav__item">
-      <a href="#address" class="nav__item-link" data-scroll>Как нас найти</a>
+      <a href="#address" class="nav__item-link" data-scroll data-menu-item>Как нас найти</a>
     </li>
   </ul>
 </nav>

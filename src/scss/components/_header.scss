@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: var(--color-kobi);
 
   &__container {
@@ -17,6 +18,20 @@
   & .nav {
     width: 60%;
 
+    &__close {
+      margin-bottom: 25px;
+      padding: 25px;
+      padding-top: 30px;
+      display: none;
+      width: 40px;
+      height: 40px;
+
+      &-image {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
     &__list {
       display: flex;
       justify-content: space-between;
@@ -31,6 +46,58 @@
         color: var(--color-black-russian);
       }
     }
+
+    @include high-desktop {
+      & {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        height: 350px;
+        z-index: 1;
+        background-color: var(--color-kobi);
+
+        &__close {
+          display: block;
+
+          &-image {
+            fill: var(--color-black-russian);
+          }
+        }
+
+        &__list {
+          padding-left: 25px;
+          flex-direction: column;
+        }
+
+        &__item:not(:last-child) {
+          margin-bottom: 25px;
+        }
+      }
+
+    }
   }
 
+  .menu--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  & .burger {
+    width: 50px;
+    height: 50px;
+    display: none;
+    stroke: var(--color-black-russian);
+
+    &__image {
+      width: 50px;
+      height: 50px;
+    }
+
+    @include high-desktop {
+      display: block;
+    }
+  }
 }

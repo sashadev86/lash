@@ -10,6 +10,13 @@
     color: var(--color-black-russian);
     text-align: center;
     text-transform: uppercase;
+
+    @include mobile {
+      & {
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+    }
   }
 
   &__top,
@@ -17,6 +24,8 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
 
     &-card {
       display: flex;
@@ -74,6 +83,29 @@
       background-color: var(--color-white);
       border: 2px solid var(--color-medium-red-violet);
       border-radius: 30px;
+    }
+
+    @include high-desktop {
+      & {
+        justify-content: space-evenly;
+      }
+    }
+
+    @include mobile {
+      & {
+        gap: 30px;
+      }
+
+      &-card {
+        min-height: 390px;
+      }
+
+      &-wrapper {
+
+        &-description {
+          font-size: 18px;
+        }
+      }
     }
   }
 

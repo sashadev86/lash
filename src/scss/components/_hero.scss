@@ -46,5 +46,32 @@
     &-span {
       color: var(--color-medium-red-violet);
     }
+
+    @include tablet {
+      & {
+        font-size: 44px;
+      }
+    }
+
+    @include high-tablet {
+      & {
+        max-width: 460px;
+        font-size: 32px;
+      }
+    }
+
+    @include small-tablet {
+      & {
+        max-width: 390px;
+        font-size: 28px;
+      }
+    }
+
+    @include mobile {
+      & {
+        max-width: 220px;
+        font-size: 22px;
+      }
+    }
   }
 }
