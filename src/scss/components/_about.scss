@@ -66,10 +66,15 @@
         text-transform: uppercase;
       }
 
+      @include high-desktop {
+        & {
+          gap: 20px;
+        }
+      }
+
       @include mobile {
         & {
           padding: 10px;
-          gap: 20px;
 
           &-text {
             font-size: 18px;
