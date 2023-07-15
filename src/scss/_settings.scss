@@ -60,6 +60,9 @@ input {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .list-reset {
