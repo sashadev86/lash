@@ -1,0 +1,41 @@
+.footer {
+  &__wrapper {
+    background-color: var(--color-kobi);
+  }
+
+  &__description {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black-russian);
+    text-transform: uppercase;
+    text-align: center;
+
+    @include mobile {
+      & {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__amici {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#e6e9f0,#eef1f5);
+
+    &-link {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 18px;
+      line-height: 22px;
+      background: #0f0;
+      background: -webkit-gradient(linear,right top,left top,from(#0f0),to(red));
+      background: -o-linear-gradient(right,#0f0 0,red 100%);
+      background: linear-gradient(to left,#0f0 0,red 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

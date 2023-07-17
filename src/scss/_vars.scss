@@ -1,0 +1,19 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Jost", "Palace of Sports", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-white: #ffffff;
+  --color-kobi: #D4A5B5;
+  --color-black-russian: #151516;
+  --color-medium-red-violet: #C9347B;
+  --color-grey: #808080;
+  --filter-image-30-black: rgba(17, 16, 16, 0.30);
+  --filter-image-20-black: rgba(17, 16, 16, 0.20);
+  --color-background-pink: radial-gradient(50% 50.00% at 50% 50.00%, #C9347B 0%, rgba(201, 52, 123, 0.00) 100%);
+}

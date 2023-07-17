@@ -1,0 +1,125 @@
+.examples {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    font-family: 'Palace of Sports';
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--color-black-russian);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include mobile {
+      & {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+
+    &-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-picture {
+        position: relative;
+        display: flex;
+        border: 3px solid var(--color-medium-red-violet);
+        border-radius: 32px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: var(--filter-image-20-black);
+          border-radius: 30px;
+        }
+
+        &-image {
+          border-radius: 30px;
+        }
+      }
+    }
+
+    @include mobile {
+      &-slide {
+        &-picture {
+          &-image {
+            height: 240px;
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    &-next,
+    &-prev {
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+
+      &-image {
+        width: 100px;
+        height: 80px;
+        fill: var(--color-medium-red-violet);
+        transition: fill .3s ease-in-out;
+      }
+
+      &.swiper-button-disabled .examples__button-image {
+        fill: var(--color-grey);
+      }
+
+      @include big-desktop {
+        & {
+          top: 5%;
+        }
+      }
+
+      @include mobile {
+        & {
+          top: 12%;
+        }
+
+        &-image {
+          width: 60px;
+        }
+      }
+    }
+
+    &-next {
+      right: -50px;
+    }
+
+    &-prev {
+      left: -50px;
+      transform: rotate(180deg);
+    }
+
+    @include big-desktop {
+      &-next {
+        right: 40px;
+      }
+
+      &-prev {
+        left: 30px;
+      }
+    }
+  }
+}
+

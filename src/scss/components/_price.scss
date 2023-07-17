@@ -1,0 +1,179 @@
+.price {
+  padding-top: 60px;
+  margin-bottom: 60px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    font-family: 'Palace of Sports';
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--color-black-russian);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include mobile {
+      & {
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__top,
+  &__bottom {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    &-card {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 264px;
+      width: 100%;
+      min-height: 450px;
+    }
+
+    &-wrapper {
+
+      &-picture {
+        margin-bottom: 13px;
+        position: relative;
+        display: flex;
+        max-height: 250px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: var(--filter-image-30-black);
+          border-radius: 15px;
+        }
+
+        &-image {
+          width: 100%;
+          min-height: 250px;
+          border-radius: 15px;
+        }
+      }
+
+      &-description {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--color-black-russian);
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+
+    &-value {
+      margin-top: auto;
+      padding: 11px 20px;
+      width: 100%;
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--color-black-russian);
+      text-align: center;
+      text-transform: uppercase;
+      background-color: var(--color-white);
+      border: 2px solid var(--color-medium-red-violet);
+      border-radius: 30px;
+    }
+
+    @include high-desktop {
+      & {
+        justify-content: space-evenly;
+      }
+    }
+
+    @include mobile {
+      & {
+        gap: 30px;
+      }
+
+      &-card {
+        min-height: 390px;
+      }
+
+      &-wrapper {
+
+        &-description {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 25px;
+    justify-content: space-evenly;
+  }
+
+  &__remove {
+    margin: 0 auto;
+    padding: 11px 50px;
+    max-width: 360px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-black-russian);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-medium-red-violet);
+    border-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__background {
+    position: absolute;
+    border-radius: 100%;
+    background: var(--color-background-pink);
+    z-index: -1;
+
+    &-one {
+      width: 700px;
+      height: 700px;
+      top: 10%;
+      left: -40%;
+    }
+
+    &-two {
+      width: 700px;
+      height: 700px;
+      top: -15%;
+      right: -25%;
+    }
+
+    &-three {
+      width: 1000px;
+      height: 1000px;
+      right: -65%;
+      bottom: -30%;
+    }
+
+    @include mobile {
+      &-one {
+        left: 20%;
+      }
+
+      &-two {
+        top: -10%;
+        right: 20%;
+      }
+
+      &-three {
+        right: -10%;
+        bottom: 0%;
+      }
+    }
+  }
+}
