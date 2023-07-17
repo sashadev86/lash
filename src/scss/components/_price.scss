@@ -2,6 +2,10 @@
   padding-top: 60px;
   margin-bottom: 60px;
 
+  &__container {
+    position: relative;
+  }
+
   &__title {
     margin-bottom: 70px;
     font-family: 'Palace of Sports';
@@ -127,5 +131,49 @@
     border-radius: 30px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  &__background {
+    position: absolute;
+    border-radius: 100%;
+    background: var(--color-background-pink);
+    z-index: -1;
+
+    &-one {
+      width: 700px;
+      height: 700px;
+      top: 10%;
+      left: -40%;
+    }
+
+    &-two {
+      width: 700px;
+      height: 700px;
+      top: -15%;
+      right: -25%;
+    }
+
+    &-three {
+      width: 1000px;
+      height: 1000px;
+      right: -65%;
+      bottom: -30%;
+    }
+
+    @include mobile {
+      &-one {
+        left: 20%;
+      }
+
+      &-two {
+        top: -10%;
+        right: 20%;
+      }
+
+      &-three {
+        right: -10%;
+        bottom: 0%;
+      }
+    }
   }
 }

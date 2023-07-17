@@ -74,4 +74,21 @@
       }
     }
   }
+
+  &__background {
+    position: absolute;
+    left: -45%;
+    bottom: -55%;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 100%;
+    background: var(--color-background-pink);
+    z-index: -1;
+
+    @include mobile {
+      & {
+        bottom: -90%;
+      }
+    }
+  }
 }
