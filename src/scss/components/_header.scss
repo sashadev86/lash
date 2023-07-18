@@ -40,10 +40,30 @@
     &__item {
 
       &-link {
+        position: relative;
         font-size: 30px;
         font-weight: 300;
         text-transform: lowercase;
         color: var(--color-black-russian);
+
+        &::after {
+          position: absolute;
+          content: "";
+          bottom: 3px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: var(--color-medium-red-violet);
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform .7s ease-in-out;
+          border-radius: 100px;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
       }
     }
 

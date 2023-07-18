@@ -73,12 +73,17 @@
       position: absolute;
       top: 50%;
       z-index: 1;
+      cursor: pointer;
 
       &-image {
         width: 100px;
         height: 80px;
         fill: var(--color-medium-red-violet);
         transition: fill .3s ease-in-out;
+      }
+
+      &:hover .examples__button-image {
+        fill: var(--color-kobi);
       }
 
       &.swiper-button-disabled .examples__button-image {
