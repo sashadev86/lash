@@ -1,1 +1,1 @@
-https://banditos86.github.io/lash/
+https://sashadev86.github.io/lash/
